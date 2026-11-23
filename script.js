@@ -10,7 +10,7 @@
 // First: replace this menu with YOUR truck's menu (keep the same shape).
 const menu = [
   { name: "Hot Dog", price: 7.50 },
-  { name: "Hamburger", price: 8 },
+  { name: "Hamburger", price: 8.00 },
   { name: "Cheeseburger", price: 8.50 },
 ];
 
@@ -21,10 +21,10 @@ const area = document.getElementById("card-area");
 
 // ---------- Step 1: Make ONE card ----------
 // EXAMPLE: 4 moves. Make it, give it classes, give it text, put it on the page.
-const card = document.createElement("div");   // 1. make a new <div> (not on the page yet!)
-card.className = "card p-3";                   // 2. give it Bootstrap classes
-card.textContent = "Today's special";          // 3. give it text
-area.appendChild(card);                        // 4. put it inside #card-area. Now you can see it.
+//const card = document.createElement("div");   // 1. make a new <div> (not on the page yet!)
+//card.className = "card p-3";                   // 2. give it Bootstrap classes
+//card.textContent = "Today's special";          // 3. give it text
+//area.appendChild(card);                        // 4. put it inside #card-area. Now you can see it.
 
 // YOUR TURN: make a second card that says your truck's name.
 // Change: card → card2 (4 places), and the text.
@@ -32,21 +32,21 @@ area.appendChild(card);                        // 4. put it inside #card-area. N
 
 // ---------- Step 2: A card for EVERY item ----------
 // EXAMPLE: the same 4 moves, inside forEach. One card per menu item.
-menu.forEach(function (item) {
-  const itemCard = document.createElement("div");
-  itemCard.className = "card p-3";
-  itemCard.textContent = item.name;
-  area.appendChild(itemCard);
-});
+//menu.forEach(function (item) {
+// const itemCard = document.createElement("div");
+// itemCard.className = "card p-3";
+// itemCard.textContent = item.name;
+// area.appendChild(itemCard);
+// });
 
 // YOUR TURN: don't copy this one. Change the example above,
 // so each card shows the name AND the price, like "Taco: $4.5".
 // Change: item.name → item.name + ": $" + item.price
 
-const card2 = document.createElement("div");
-card2.className = "card p-3";
-card2.textContent = "Taco Rocket";
-area.appendChild(card2);
+// const card2 = document.createElement("div");
+// card2.className = "card p-3";
+// card2.textContent = "Taco Rocket";
+// area.appendChild(card2);
 
 menu.forEach(function (item) {
   const itemCard = document.createElement("div");
